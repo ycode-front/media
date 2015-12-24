@@ -1,0 +1,12 @@
+/*设计稿的像素宽度*/
+@psd-width:640;
+/*设计稿像素比例*/
+@psd-ratio-ios:@psd-width/320;
+/*设计稿上面的像素单位，避免使用奇数px*/
+@px:(1/@psd-ratio-ios)px;
+// 是 vm 的兼容方案
+@vw: 0.01rem;
+
+body {
+    font-size: 16px;
+}
